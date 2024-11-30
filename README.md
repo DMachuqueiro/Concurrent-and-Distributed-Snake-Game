@@ -1,27 +1,28 @@
 # Concurrent and Distributed Snake Game
 
-The **Concurrent and Distributed Snake Game** is a project that reimagines the classic Snake game by integrating principles of concurrent and distributed programming. This implementation uses threads for controlling the movements of the snakes and thread pools for managing dynamic obstacles, demonstrating advanced Java programming concepts. Additionally, a "Human Snake" mode allows users to play and interact with the game.
+The **Concurrent and Distributed Snake Game** is a project that reimagines the classic Snake game by integrating principles of concurrent and distributed programming. This implementation uses threads for controlling the movements of snakes, thread pools for managing dynamic obstacles, and synchronization mechanisms like **Locks** and **synchronized blocks** to ensure safe and efficient multi-threaded operations. Additionally, a "Human Snake" mode allows users to play and interact with the game.
 
 ## Features
 
 - **Concurrent Programming**:
-  - Snakes are managed as independent threads, enabling smooth and parallel movement.
-  - Obstacles are generated and updated using thread pools for efficient resource management.
+  - **Threads**: Each snake is managed as an independent thread.
+  - **Thread Pools**: Efficient management of dynamic obstacles using thread pools.
+  - **Synchronization**: Ensures thread safety using `Locks` and `synchronized` blocks for critical sections.
 - **Distributed Architecture**:
-  - The game supports a distributed setup with remote connections.
-  - Players can interact with remote boards via client-server communication.
+  - Supports distributed gameplay via remote connections using RMI (Remote Method Invocation).
 - **Interactive Gameplay**:
-  - "Human Snake" mode allows the user to control the snake manually.
-  - Dynamic obstacles add complexity and challenge to the game.
+  - "Human Snake" mode for user-controlled gameplay.
+  - Dynamic obstacles that increase the game's difficulty.
 - **Graphical Interface**:
-  - A clean and interactive GUI built with Java Swing.
+  - A responsive and intuitive GUI built with Java Swing.
 
 ## Technologies Used
 
-- **Java Threads**: For handling snake movements.
-- **Thread Pools**: For obstacle management.
-- **RMI (Remote Method Invocation)**: For distributed board control in remote gameplay.
-- **Java Swing**: For building the graphical user interface.
+- **Java Threads**: Handles concurrent snake movements.
+- **Locks and Synchronized Blocks**: Ensures thread-safe operations on shared resources.
+- **Thread Pools**: Manages obstacle generation and updates efficiently.
+- **RMI (Remote Method Invocation)**: Enables distributed gameplay.
+- **Java Swing**: Provides a graphical interface for an enhanced user experience.
 
 ## Requirements
 
